@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 18,
-    backgroundColor: '#90CAF9',
-    // alignItems: 'center',
+    backgroundColor: 'orange',
+    alignItems: 'center',
     justifyContent: 'center',
 
   },
