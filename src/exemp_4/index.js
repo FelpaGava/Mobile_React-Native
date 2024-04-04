@@ -1,52 +1,53 @@
-import { View, Text, TextInput, Pressable } from "react-native";
-
 import { useState } from 'react';
 
-import styles from "./styles";
+import { View, Text, TextInput, Pressable } from 'react-native';
 
-export default function atividade_4 () {
+import styles from './styles';
 
-    const [txtDigitado, setTxtDigitado] = useState('Insira seu NOME e SOBRENOME');
+export default function exemp_4(){
+
+    const [txtDigitado, setTxtDigitado] = useState('Texto digitado');
     const [txt2, setTxt2] = useState('');
     const [txtTela, setTxtTela] = useState('');
 
-    function ResultadoNome (txt) {
+    function atualizaTextoHandle (txt) {
         setTxtDigitado(txt);
+    }
+
+    function handlelimpaTexto (){
         setTxtTela(txt2);
-        setTxt2(vlr);
+        setTxt2('');
     }
 
     return(
         <View style={styles.container}>
-            <Text style={styles.titulo}>Atividade 4</Text>
+            <Text style={styles.titulo}>Exemplo 4</Text>
 
             <Text style={styles.texto}>{txtDigitado}</Text>
 
-            <Text style={styles.texto}>Nome :</Text>
-
             <TextInput 
-                style={styles.input}
-                onChangeText={(vlr) => ResultadoNome()}
-                vlr={setTxtTela}
+            style={styles.input}
+            onChangeText={(valor) => atualizaTextoHandle(valor)}
             />
+
+            <View style={styles.linha}></View>
 
             <Text style={styles.texto}>{txtTela}</Text>
 
-            <Text style={styles.texto}>Sobrenome :</Text>
+            <Text style={styles.texto}>{setTxtTela}</Text>
 
             <TextInput 
                 style={styles.input}
-                onChangeText={(vlr) => ResultadoNome()}
-                vlr={setTxt2}
+                onChangeText={(vlr) => setTxt2(vlr)}
+                value={txt2}
             />
 
             <Pressable 
                 style={({ pressed }) => pressed ? [styles.botao, styles.botaoPress] : styles.botao}
-                onPress={() => ResultadoNome()}
+                onPress={() => handlelimpaTexto()}
             >
                 <text style={styles.txtBotao}>Exibir texto</text>
             </Pressable>
         </View>
-    )
+    );
 }
-
