@@ -40,9 +40,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 10,
         marginTop: 20,
-        width: '20%',
-        textAlign: 'center',
-        
+        width: '100%',
+        marginVertical: '50%',
     },
     buttonTouch: {
         backgroundColor: '#C51162',
@@ -51,32 +50,12 @@ const styles = StyleSheet.create({
         fontSize: 30,
         color: 'FF80AB',
         textAlign: 'center',
-        justifyContent: 'center',
-        alignItems:'center',
     },
     textLabel: {
         fontSize: 16,
         fontWeight: 'bold',
         color: '#C51162',
     },
-    linha:{
-        marginVertical: 20,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        textAlign: 'center',
-        marginHorizontal: 0,
-    },
-    ButtonZerar: {
-        backgroundColor: '#E91E63',
-        height: 60,
-        justifyContent: 'center',
-        borderRadius: 10,
-        marginTop: 20,
-        width: '100%',
-        textAlign: 'center',
-    },
-
 
 });
 
