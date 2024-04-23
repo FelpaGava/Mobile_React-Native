@@ -114,7 +114,7 @@ export default function Atividade_5() {
                 onFocus={() => setIsFocusTotal(true)}
                 onBlur={() => setIsFocusTotal(false)}
                 editable={false}
-                value={total ? parseFloat(total).toFixed(2) : ''}
+                value={total ? parseFloat(total).toFixed(2) : '0.00'}
             />
             <View style={styles.linha}>
                 <Pressable
