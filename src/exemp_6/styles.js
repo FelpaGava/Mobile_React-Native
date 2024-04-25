@@ -1,0 +1,20 @@
+import { StyleSheet } from "react-native";
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        width: '100%',
+        justifyContent: 'center',
+        backgroundColor: '#eee',
+        padding: 8,
+        alignItems: 'center',
+    },
+    titulo: {
+        margin: 6,
+        fontSize: 30,
+        fontWeight: 'bold',
+        color: '#aaa',
+    },
+})
+
+export default styles;
