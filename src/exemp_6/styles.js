@@ -4,10 +4,11 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         width: '100%',
-        justifyContent: 'center',
+        // justifyContent: 'center',
         backgroundColor: '#eee',
         padding: 8,
         alignItems: 'center',
+        borderRadius: 20,
     },
     titulo: {
         margin: 6,
@@ -15,6 +16,10 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#aaa',
     },
-})
+    ladoalado: {
+        flexDirection: 'row',
+        marginVertical: 30,
+    }
+});
 
 export default styles;
