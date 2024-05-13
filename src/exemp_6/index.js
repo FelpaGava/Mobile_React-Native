@@ -1,6 +1,7 @@
 import { View, Text } from "react-native";
 
 import Input from "./input";
+import Botao from "./botao";
 
 import styles from "./styles";
 
@@ -13,6 +14,10 @@ export default function Exemplo_6() {
             <Input placeholder='Peso'/>
             <Input placeholder='Altura'/>
         </View>
+
+        <Botao>Calcular</Botao>
     </View>
+
+    
     );
 }
