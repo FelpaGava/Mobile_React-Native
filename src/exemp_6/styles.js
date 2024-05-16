@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         width: '100%',
-        // justifyContent: 'center',
+        justifyContent: 'space-between',
         backgroundColor: '#eee',
         padding: 8,
         alignItems: 'center',
@@ -19,7 +19,13 @@ const styles = StyleSheet.create({
     ladoalado: {
         flexDirection: 'row',
         marginVertical: 30,
-    }
+    },
+    imc: {
+        color: 'lightgray',
+        fontSize: 65,
+        marginVertical: 15,
+        textAlign: 'center',
+    },
 });
 
 export default styles;
