@@ -1,13 +1,14 @@
 import { View, Pressable, Text } from 'react-native'; 
+import styles from './styles';
 
 export default function Exemplos({ navigation }) {
     return(
-        <View>
+        <View style={styles.TextPessable} >
             <Pressable onPress={() => navigation.navigate('Exemplo2')}>
-                <Text>Exemplo 2</Text>
+                <Text style={styles.TextPessable}>Exemplo 2</Text>
             </Pressable>
             <Pressable onPress={() => navigation.navigate('Exemplo3')}>
-                <Text>Exemplo 3</Text>
+                <Text >Exemplo 3</Text>
             </Pressable>
             <Pressable onPress={() => navigation.navigate('Exemplo4')}>
                 <Text>Exemplo 4</Text>

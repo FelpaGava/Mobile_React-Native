@@ -16,16 +16,16 @@ export default function NavegacaoStackEx() {
         <Stack.Navigator>
             <Stack.Screen name="Exemplos" component={Exemplos} />
             <Stack.Screen
-                name="Ex2"
+                name="Exemplo2"
                 component={Exemplo2}
                 options={{ title: 'Exemplo 2' }}
             />
-            <Stack.Screen name="Ex3" component={Exemplo3} />
-            <Stack.Screen name="Ex4" component={Exemplo4} />
-            <Stack.Screen name="Ex5" component={Exemplo5} />
-            <Stack.Screen name="Ex6" component={Exemplo6} />
-            <Stack.Screen name="Ex7" component={Exemplo7} />
-            <Stack.Screen name="Ex8" component={Exemplo8} />
+            <Stack.Screen name="Exemplo3" component={Exemplo3} />
+            <Stack.Screen name="Exemplo4" component={Exemplo4} />
+            <Stack.Screen name="Exemplo5" component={Exemplo5} />
+            <Stack.Screen name="Exemplo6" component={Exemplo6} />
+            <Stack.Screen name="Exemplo7" component={Exemplo7} />
+            <Stack.Screen name="Exemplo8" component={Exemplo8} />
         </Stack.Navigator>
     );
 }
